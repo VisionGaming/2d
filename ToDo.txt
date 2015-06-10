@@ -1,0 +1,113 @@
+
+=========================================
+Logic change, overlays will go away
+spritesheets will become
+
+action_direction_subaction_subactionverb
+
+e.g.
+still_left_gun_shoot
+swim_down_gun_shoot
+swim_up_gun_shoot
+
+notes there will always be a default direction
+========================================================
+
+This logic will be removed:
+
+Logic change / Bug, man should have still left and still right
+so when standing still can shoot the direction he is facing.
+========================================================
+
+
+
+Intro
+	play
+
+Main level 
+	a level with multiple levels
+
+When level cleared go back to level zero
+
+
+
+**Outstanding bits and pieces**
+
+Objects that appear randomly for a random time
+Messages - Thought bubbles "Get The..." remove?
+Game Intro
+Game Map / Level / inter level display 
+Saved high score
+Level score resets after death
+
+Baddie new properties {
+	specialAbility: vaccuum udlr, blower udlr	
+}
+
+maybe Trigger could inherit from object and have overridable properties
+A TriggerObject is a standard object with extra features
+
+TriggerObject {
+
+	-- insert regular object properties --
+
+				name, 
+				spriteSheet, 
+				power,                 // the power is held by the player and shown at the top
+				message,
+				messageScalePercentage,
+				spriteCoda
+				playTimes
+				frameInterval
+				displaySizePercent
+				padding: {left:10, right:10, top:10, bottom:10} // padding of the object for collision detection
+				powerIncrement
+				points
+
+
+	// a delay before the object appears -1 = random
+	visibility {
+		delay: -1 - n frames
+		duration: -1 - n frames
+	}
+
+	exit: {
+		isExit: true / false
+		nextLevel: 0 - maxLevels
+	}
+
+	// toggle an object
+	switch {
+		isSwitch: true / false
+		state: true / false
+
+		targetObject {
+			x:0, 
+			y:0
+		}
+
+		state: {
+			mode: true / false
+			off:{ 
+				isSolid: true / false
+				spriteSheet: ""
+		 	},
+		 	on:{ 
+				isSolid: true / false
+				spriteSheet: ""
+		 	}
+		}
+	}
+}
+
+
+
+Game Over
+
+
+**Messages**
+Present a system message when a user needs to know something.
+show a bordered message that floats and disolves
+place a count next to powers that are marked with showCount:true
+
+

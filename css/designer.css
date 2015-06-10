@@ -1,0 +1,73 @@
+.ui-menu { width: 150px;}
+.designerIcon {position:absolute; left:0px; top:0px;}
+.baddiename {font-size:0.2em;}
+#feedback { font-size: 1.4em; }
+#baddieSelectable .ui-selecting { background: #FECA40; }
+#baddieSelectable .ui-selected { background: #F39814; color: white; }
+#baddieSelectable { list-style-type: none; margin: 0; padding: 0; width: 700px; }
+#baddieSelectable li { margin: 3px; padding: 1px; float: left; width: 120px; height: 80px; text-align: center; }  
+
+#platformSelectable .ui-selecting { background: #FECA40; }
+#platformSelectable .ui-selected { background: #F39814; color: white; }
+#platformSelectable { list-style-type: none; margin: 0; padding: 0; width: 700px; }
+#platformSelectable li { margin: 3px; padding: 1px; float: left; width: 120px; height: 80px; text-align: center; }  
+
+#imagesSelectable .ui-selecting { background: #FECA40; }
+#imagesSelectable .ui-selected { background: #F39814; color: white; }
+#imagesSelectable { list-style-type: none; margin: 0; padding: 0; width: 700px; }
+#imagesSelectable li { margin: 3px; padding: 1px; float: left; width: 120px; height: 80px; text-align: center; }  
+ 
+#spawnSelectable .ui-selecting { background: #FECA40; }
+#spawnSelectable .ui-selected { background: #F39814; color: white; }
+#spawnSelectable { list-style-type: none; margin: 0; padding: 0; width: 700px; }
+#spawnSelectable li { margin: 3px; padding: 1px; float: left; width: 120px; height: 80px; text-align: center; }  
+
+#playerSelectable .ui-selecting { background: #FECA40; }
+#playerSelectable .ui-selected { background: #F39814; color: white; }
+#playerSelectable { list-style-type: none; margin: 0; padding: 0; width: 700px; }
+#playerSelectable li { margin: 3px; padding: 1px; float: left; width: 120px; height: 80px; text-align: center; }  
+
+#tileSelectable .ui-selecting { background: #FECA40; }
+#tileSelectable .ui-selected { background: #F39814; color: white; }
+#tileSelectable { list-style-type: none; margin: 0; padding: 0; width: 700px; }
+#tileSelectable li { margin: 3px; padding: 1px; float: left; width: 120px; height: 80px; text-align: center; }  
+
+#objectSelectable .ui-selecting { background: #FECA40; }
+#objectSelectable .ui-selected { background: #F39814; color: white; }
+#objectSelectable { list-style-type: none; margin: 0; padding: 0; width: 700px; }
+#objectSelectable li { margin: 3px; padding: 1px; float: left; width: 120px; height: 80px; text-align: center; }  
+
+#baddieLevelSelectable .ui-selecting { background: #FECA40; }
+#baddieLevelSelectable .ui-selected { background: #F39814; color: white; }
+#baddieLevelSelectable { list-style-type: none; margin: 0; padding: 0; width: 700px; }
+#baddieLevelSelectable li { margin: 3px; padding: 1px; float: left; width: 120px; height: 80px; text-align: center; }  
+
+#platformLevelSelectable .ui-selecting { background: #FECA40; }
+#platformLevelSelectable .ui-selected { background: #F39814; color: white; }
+#platformLevelSelectable { list-style-type: none; margin: 0; padding: 0; width: 700px; }
+#platformLevelSelectable li { margin: 3px; padding: 1px; float: left; width: 120px; height: 80px; text-align: center; }  
+
+.baddieView { padding: 1em; background-color: #EEEEDD; border: 1px solid #CCC; max-width: 655px; }
+.baddieView input { font-family: Arial; }
+.baddieView b { font-weight: bold; }
+.baddieView p { margin-top: 0.9em; margin-bottom: 0.9em; }
+.baddieView select[multiple] { width: 100%; height: 8em; }
+.baddieView h2 { margin-top: 0.4em; }
+
+.readout { width: 17em; float: right; }
+.readout td { width: 50%; }
+tr { vertical-align: top }
+td { padding: 0.2em 0.2em 0.6em 0.2em; }
+td.label { text-align: right; padding-right: 0.5em; }
+input[type=radio] { margin: 0 0.25em 0 0.25em }
+
+.iconMinimize{
+    cursor: pointer;
+    float: right;
+    margin-right:10px;
+    margin-top: 3px;
+}
+
+#saveAs {
+    visibility: hidden;
+}
